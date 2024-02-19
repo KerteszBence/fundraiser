@@ -1,8 +1,8 @@
 package org.fundraiser.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import hu.progmasters.backend.service.UploadResponse;
 import lombok.Data;
+import org.fundraiser.dto.create.UploadResponse;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import javax.persistence.*;
