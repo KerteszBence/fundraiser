@@ -10,9 +10,9 @@ spring:
   thymeleaf:
     cache: false
   datasource:
-    url: jdbc:mysql://fundraiser-project.cjk6gi482eau.eu-central-1.rds.amazonaws.com:3306/fundraiser?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://localhost:3306/fundraiser?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
     username: root
-    password: Fundiverse1234!
+    password: test1234
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
