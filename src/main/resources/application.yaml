@@ -1,0 +1,61 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+    url: jdbc:mysql://fundraiser-project.cjk6gi482eau.eu-central-1.rds.amazonaws.com:3306/fundraiser?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: Fundiverse1234!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    generate-ddl: true
+    open-in-view: false
+
+logging:
+  level:
+    hu.progmasters: info
+    org.springframework.web: info
+    org.hibernate: error
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+cloudinary.cloud_name: dmfjyejnq
+cloudinary.api_key: 524264852839748
+cloudinary.api_secret: -w_uLLmZ8LjSmNGxj_G13XtGa80
+
+paypal.mode: sandbox
+paypal.client.id: AfxBuxQ7h5l_oEsVPUOeY_hnNfziEBna-N00KjbKyva0ez2Qs1W-ZOgqE7bbANbUhKY2e02m-ZqkD0xE
+paypal.client.secret: EP1_l5GEmOaJB4BojrzmLP2xl5c_DHT8pisU_If7vYC7Jj-Z_cON2eZ-Rk-GCPEJ5qgHmsEHd6i_8kdp
+
+fixer:
+  api:
+    key: beb476d6171e68c3842feca7c9c4d503
+    base_url: "http://data.fixer.io/api/"
+
+fundraiser-project:
+  aes:
+    secretKey: "FhtzkbiQ4efnpKNISPxoBA=="
+  mailsender:
+    host: smtp.gmail.com
+    port: 587
+    username: fundiverse.noreply@gmail.com
+    password: cryk aquu wcrq dxly
+    protocol: smtp
+    auth: true
+    starttls: true
+    debug: true
