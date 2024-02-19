@@ -2,7 +2,7 @@ package org.fundraiser.domain;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
+import org.fundraiser.config.CampaignCategory;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.List;

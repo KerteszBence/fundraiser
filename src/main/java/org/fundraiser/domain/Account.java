@@ -1,11 +1,8 @@
+package org.fundraiser.domain;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
-import org.fundraiser.domain.Campaign;
-import org.fundraiser.domain.ConfirmationToken;
-import org.fundraiser.domain.Donation;
-import org.fundraiser.domain.FileRegistry;
-
+import org.fundraiser.config.AccountType;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.List;
