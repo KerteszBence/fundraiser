@@ -25,3 +25,10 @@ jobs:
       run: docker build -t kerteszbence/cicd-pipeline-backend backend/
     - name: Backend image push to Dockerhub
       run: docker push kerteszbence/cicd-pipeline-backend:latest
+
+# ha lenne frontend
+
+    - name: Build the Frontend Docker image
+      run: docker build -t kerteszbence/cicd-pipeline-frontend frontend/
+    - name: Frontend image push to Dockerhub
+      run: docker push kerteszbence/cicd-pipeline-frontend:latest
