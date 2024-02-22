@@ -31,7 +31,7 @@ logging:
     name: fundraiser.log
     path: \src\main\resources\log
   level:
-    hu.progmasters: info
+    org.fundraiser: info
     org.springframework.web: info
     org.hibernate: error
   pattern:
