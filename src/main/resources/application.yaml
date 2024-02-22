@@ -53,8 +53,7 @@ fixer:
 fundraiser-project:
   aes:
     secretKey: "FhtzkbiQ4efnpKNISPxoBA=="
-
-mailsender:
+ mailsender:
     host: smtp.gmail.com
     port: 587
     username: fundiverse.noreply@gmail.com
