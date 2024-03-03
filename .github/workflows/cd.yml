@@ -1,0 +1,33 @@
+name: CD Pipeline
+
+on:
+  workflow_run:
+    workflows: ["CI Pipeline"]
+    types:
+      - completed
+
+jobs:
+
+  build:
+
+    runs-on: self-hosted
+
+# ha lenne frontend is
+
+    steps:
+      - name: Delete old backend docker container
+        run: sudo docker rm -f cicd-pipeline-backend-container || true
+      - name: Delete old frontend docker container
+        run: sudo docker rm -f cicd-pipeline-frontend-container || true
+      - name: Delete all docker image
+        run: sudo docker image prune -a -f
+
+      - name: Pull backend docker image
+        run: sudo docker pull kerteszbence/cicd-pipeline-backend:latest
+      - name: Run backend docker container
+        run: sudo docker run -d -p 8080:8080 --name cicd-pipeline-backend-container kerteszbence/cicd-pipeline-backend
+
+      - name: Pull frontend docker image
+        run: sudo docker pull kerteszbence/cicd-pipeline-frontend:latest
+      - name: Run frontend docker container
+        run: sudo docker run -d -p 80:80 --name cicd-pipeline-frontend-container kerteszbence/cicd-pipeline-frontend

@@ -9,11 +9,11 @@
         <version>2.5.0</version>
         <relativePath/>
     </parent>
-    <groupId>hu.progmasters</groupId>
-    <artifactId>backend</artifactId>
+    <groupId>org.fundraiser</groupId>
+    <artifactId>fundraiser</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>backend</name>
-    <description>backend</description>
+    <name>fundraiser</name>
+    <description>fundraiser</description>
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -32,11 +32,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.mariadb.jdbc</groupId>
-            <artifactId>mariadb-java-client</artifactId>
         </dependency>
 
         <dependency>
@@ -113,6 +108,12 @@
             <groupId>org.thymeleaf</groupId>
             <artifactId>thymeleaf-spring5</artifactId>
             <version>3.0.11.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.6.12</version>
         </dependency>
 
     </dependencies>

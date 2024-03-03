@@ -27,8 +27,11 @@ spring:
     open-in-view: false
 
 logging:
+  file:
+    name: fundraiser.log
+    path: \src\main\resources\log
   level:
-    hu.progmasters: info
+    org.fundraiser: info
     org.springframework.web: info
     org.hibernate: error
   pattern:
@@ -41,6 +44,7 @@ cloudinary.api_secret: secret
 paypal.mode: sandbox
 paypal.client.id: id
 paypal.client.secret: secret
+
 fixer:
   api:
     key: key
@@ -49,6 +53,7 @@ fixer:
 fundraiser-project:
   aes:
     secretKey: "FhtzkbiQ4efnpKNISPxoBA=="
+
   mailsender:
     host: smtp.gmail.com
     port: 587
