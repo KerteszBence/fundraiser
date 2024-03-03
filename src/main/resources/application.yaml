@@ -34,17 +34,16 @@ logging:
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
 
-cloudinary.cloud_name: dmfjyejnq
-cloudinary.api_key: 524264852839748
-cloudinary.api_secret: -w_uLLmZ8LjSmNGxj_G13XtGa80
+cloudinary.cloud_name: name
+cloudinary.api_key: key
+cloudinary.api_secret: secret
 
 paypal.mode: sandbox
-paypal.client.id: AfxBuxQ7h5l_oEsVPUOeY_hnNfziEBna-N00KjbKyva0ez2Qs1W-ZOgqE7bbANbUhKY2e02m-ZqkD0xE
-paypal.client.secret: EP1_l5GEmOaJB4BojrzmLP2xl5c_DHT8pisU_If7vYC7Jj-Z_cON2eZ-Rk-GCPEJ5qgHmsEHd6i_8kdp
-
+paypal.client.id: id
+paypal.client.secret: secret
 fixer:
   api:
-    key: beb476d6171e68c3842feca7c9c4d503
+    key: key
     base_url: "http://data.fixer.io/api/"
 
 fundraiser-project:
@@ -54,7 +53,7 @@ fundraiser-project:
     host: smtp.gmail.com
     port: 587
     username: fundiverse.noreply@gmail.com
-    password: cryk aquu wcrq dxly
+    password: password
     protocol: smtp
     auth: true
     starttls: true
