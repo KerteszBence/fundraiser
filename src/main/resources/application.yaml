@@ -47,7 +47,7 @@ paypal.client.secret: secret
 
 fixer:
   api:
-    key: key
+    key: key2
     base_url: "http://data.fixer.io/api/"
 
 fundraiser-project:
